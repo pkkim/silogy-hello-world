@@ -3,9 +3,14 @@
 # A pipeline specifies which jobs ( = groups of tests) should be run at a certain time.
 version: 0
 test_rules:
-  test_tracing_rule:
+  test_tracing_rule_verilator:
     command_string: ./test_default.sh
+  test_tracing_rule_vivado:
+    command_string: ./test_vivado.sh
 test_targets:
   test_tracing:
     time_limit: 600
-    test_rule: test_tracing_rule
+    test_rule: test_tracing_rule_verilator
+  test_tracing_vivado:
+    time_limit: 600
+    test_rule: test_tracing_rule_vivado
