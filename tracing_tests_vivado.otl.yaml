@@ -1,5 +1,5 @@
 - name: test_tracing_vivado
   rule: raw_bash
   rule_args:
-    script:
+    cmds:
       - "${GIT_ROOT}/test_vivado.sh"
