@@ -73,6 +73,22 @@ build:
 # 3. Or, call a submakefile where we can override the rules ourselves:
 	$(MAKE) -j -C obj_dir -f ../Makefile_obj
 
+	@echo
+	@echo "-- RUN ---------------------"
+	@rm -rf logs
+	@mkdir -p logs
+	obj_dir/Vtop +trace
+
+	@echo
+	@echo "-- COVERAGE ----------------"
+	@rm -rf logs/annotated
+	$(VERILATOR_COVERAGE) --annotate logs/annotated logs/coverage.dat
+
+	@echo
+	@echo "-- DONE --------------------"
+	@echo "To see waveforms, open vlt_dump.vcd in a waveform viewer"
+	@echo
+
 
 ######################################################################
 # Other targets
