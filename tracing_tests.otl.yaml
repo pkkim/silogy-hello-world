@@ -2,4 +2,4 @@
   rule: raw_bash
   rule_args:
     cmds:
-      - "${GIT_ROOT}/test_default.sh"
+      - "./test_default.sh"
