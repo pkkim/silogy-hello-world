@@ -2,4 +2,4 @@
   rule: raw_bash
   rule_args:
     cmds:
-      - "./test_default.sh"
+      - "make"
