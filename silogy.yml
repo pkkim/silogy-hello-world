@@ -8,3 +8,5 @@ test_lists:
     path: ./tracing_tests.otl.yaml
   - name: tracing_tests_vivado
     path: ./tracing_tests_vivado.otl.yaml
+  - name: dummy_test_list
+    path: ./dummy_test_list.otl.yaml

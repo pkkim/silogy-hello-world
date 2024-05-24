@@ -1,0 +1,5 @@
+- name: test_dummy
+  rule: raw_bash
+  rule_args:
+    cmds:
+      - "echo 'dummy test'"
