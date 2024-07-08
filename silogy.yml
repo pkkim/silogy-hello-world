@@ -4,7 +4,7 @@
 
 version: 1
 test_lists:
-  - name: tracing_tests
+  - name: Test Tracing
     path: ./tracing_tests.otl.yaml
   - name: tracing_tests_vivado
     path: ./tracing_tests_vivado.otl.yaml
